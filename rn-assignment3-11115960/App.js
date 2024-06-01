@@ -1,14 +1,14 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, FlatList, ScrollView, Image, TextInput } from "react-native";
+import { StyleSheet, Text, View, FlatList, ScrollView, Image, TextInput} from "react-native";
 
 export default function App() {
   const categories = [
-    { key: "Exercise" },
-    { key: "Study" },
+    { key: "Exercise", image: require("./assets/young woman working online.png") },
+    { key: "Study", image: require("./assets/young woman working at desk.png") },
     { key: "Cook" },
     { key: "Code" },
     { key: "Gardening" },
-    { key: "Petting" },
+    { key: "Quiet Time" },
     { key: "Family Time" },
     { key: "Selfcare " },
   ];
@@ -19,7 +19,7 @@ export default function App() {
     { key: "Push Ups" },
     { key: "Differential Equations" },
     { key: "Software Engineering" },
-    { key: "Data Structures & Aalgotithms" },
+    { key: "Data Structures & Algorithms" },
     { key: "Abstract Algebra" },
     { key: "Computational Maths" },
     { key: "Object-Oriented Programming" },
@@ -39,7 +39,8 @@ export default function App() {
           <Text style={styles.mainText}>Hello , Devs</Text>
           <Text style={styles.miniText}>14 Tasks today</Text>
           <View style={styles.circle}>
-           
+          <Image style={styles.picture1} source={require("./assets/Profile Image.png")} />
+
           </View>
         </View>
         <View style={styles.container2}>
@@ -56,14 +57,21 @@ export default function App() {
               borderRadius: 10,
             }}
           >
-            
+            <Image
+              source={require("./assets/searchicon.png")}
+              style={{ width: 30, height: 30, marginRight: 10, marginLeft: 5 }}
+            />
             <TextInput
               placeholder="Search"
               style={{ flex: 1, height: "80%", fontWeight: "bold" }}
             />
           </View>
           <View style={styles.filterBox}>
-            
+          <Image
+  style={styles.filterz}
+  source={require("./assets/filtericon.png")}
+/>
+
           </View>
         </View>
         <Text style={styles.categoriesText}>Categories</Text>
@@ -100,7 +108,8 @@ export default function App() {
                   marginLeft: 20,
                 }}
               >
-                
+                                 <Image source={item.image}  />
+ 
               </View>
             </View>
           )}
@@ -123,10 +132,12 @@ export default function App() {
         />
       </View>
     </ScrollView>
+    
   );
 }
 
 const styles = StyleSheet.create({
+ 
   container: {
     flex: 1,
     backgroundColor: "#F7F0E8",
@@ -181,7 +192,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   filterBox: {
-    backgroundColor: "#DC4D01",
+    backgroundColor: "#f0522f",
     width: 70,
     height: 70,
     borderRadius: 25,
@@ -237,4 +248,10 @@ const styles = StyleSheet.create({
     marginBottom: 2,
     marginLeft: 20,
   },
+  picture1: {
+    width: "100%",
+    height: "100%"
+  },
+  
+  
 });
