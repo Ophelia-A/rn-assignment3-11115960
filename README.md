@@ -1,6 +1,6 @@
 # REACT-NATIVE ASSIGNMENT 3.
 ## ASSIGNMENT DESCRIPTION:
-- I was recreated the design in the UI mockup. I imported and used core components such as 'View', 'Text', 'ScrollView', 'TextInput', 'StyleSheet', and  'FlatList' for rendering lists of tasks. I also used  'Image` for icons and displaying images. I included categories like Exercise, Study, Code, Cook, Selfcare, Quiet time, family time and gardening. I also created a list of 15 ongoing tasks. The style of the application closely matches the provided UI design.
+- I recreated the design in a provided UI mockup. I imported and used core components such as 'View', 'Text', 'ScrollView', 'TextInput', 'StyleSheet', and  'FlatList' for rendering lists of tasks. I also used  'Image` for icons and displaying images. I included categories like Exercise, Study, Code, Cook, Selfcare, Quiet time, family time and gardening. I also created a list of 15 ongoing tasks. The style of the application closely matches the provided UI design.
 ##  COMPONENT USAGE:
   ### • View
   - In this assignment, the 'View' components were used to structure and organize the layout. They were used to wrap the entire content within a scrollable container. They also grouped elements such as the greeting text and profile image, or the search bar and filter icon.The view components were used to create and style individual sections, like categories and ongoing tasks, to ensure a cohesive and visually appealing UI.
