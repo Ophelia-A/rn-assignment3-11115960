@@ -14,21 +14,21 @@ export default function App() {
   ];
 
   const categoriess = [
-    { key: "Category 1" },
-    { key: "Category 2" },
-    { key: "Category 3" },
-    { key: "Category 4" },
-    { key: "Category 5" },
-    { key: "Category 6" },
-    { key: "Category 7" },
-    { key: "Category 8" },
-    { key: "Category 9" },
-    { key: "Category 10" },
-    { key: "Category 11" },
-    { key: "Category 12" },
-    { key: "Category 13" },
-    { key: "Category 14" },
-    { key: "Category 15" },
+    { key: "Mobile App Development" },
+    { key: "Web Development" },
+    { key: "Push Ups" },
+    { key: "Differential Equations" },
+    { key: "Software Engineering" },
+    { key: "Data Structures & Aalgotithms" },
+    { key: "Abstract Algebra" },
+    { key: "Computational Maths" },
+    { key: "Object-Oriented Programming" },
+    { key: "Linear Algebra" },
+    { key: "Vector Mechanics" },
+    { key: "Statistical Methods" },
+    { key: "Formula 1" },
+    { key: "Abott Elementary" },
+    { key: "Suits" },
   ];
 
   return (
@@ -76,7 +76,7 @@ export default function App() {
               <Text
                 style={{
                   fontSize: 20,
-                  fontWeight: "normal",
+                  fontWeight: "bold",
                   textAlign: "left",
                   marginBottom: 5,
                   marginLeft: 20,
